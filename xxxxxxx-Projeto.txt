@@ -1,0 +1,23 @@
+para instalar go: 
+    -no site https://go.dev/doc/install
+    -fazer download do arquivo go dentro da pasta go
+    -executar no terminal: tar -xvf go1.20.5.linux-amd64.tar.gz
+    -mover para usr: sudo mv go /usr/local
+    -criar variavel de ambiente: export PATH=$PATH:/usr/local/go/bin
+    -go version
+    -criar diretorio da aplicação e executar de dentro deste diretorio: 
+        -GIT
+            -git init
+            -git remote add origin git@github.com:CherlesVieira/goportunities.git
+            -git branch -M main
+        -Criar modulos no go com o repositorio do projeto
+            -go mod init github.com/CherlesVieira/goportunities
+
+para api utilizar o framework - GIN WEB framework   
+    -https://gin-gonic.com/docs/quickstart/
+    -import "github.com/gin-gonic/gin" //quando nao der o nome na frente ser o nome do ultimo diretorio (gin)
+    -go mod tidy (varre e add o modulo no arquivo go.mod - adicona os usados e deleta os nao usado no projeto)
+    -criou o go.sum (que significa o mesmo do nodemodules do javascript = dependencias do projeto)
+    
+
+        
